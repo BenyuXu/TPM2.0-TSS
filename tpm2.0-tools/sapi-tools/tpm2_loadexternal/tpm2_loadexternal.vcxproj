@@ -33,7 +33,7 @@
     <ClCompile Include="..\..\..\test\common\sample\TpmHmac.c" />
     <ClCompile Include="..\common.cpp" />
     <ClCompile Include="..\stdafx.cpp" />
-    <ClCompile Include="..\tpm2_load.cpp" />
+    <ClCompile Include="..\tpm2_loadexternal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\common\debug.h" />
@@ -47,7 +47,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A1FFC8F3-94C2-44C5-80A6-B712C41BB840}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>tpm2_load</RootNamespace>
+    <RootNamespace>tpm2_loadexternal</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
