@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tpm2_createprimary", "sapi-tools\tpm2_createprimary\tpm2_createprimary.vcxproj", "{7CF02FCD-7899-4A9D-AE7D-2F74DB1269AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tpm2_create", "sapi-tools\tpm2_create\tpm2_create.vcxproj", "{061D2E45-ED29-4838-B447-FBC3F47912C1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tpm2_load", "sapi-tools\tpm2_load\tpm2_load.vcxproj", "{58A2D55C-9BB6-406F-AC48-F55A324DCBD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tpm2_loadexternal", "sapi-tools\tpm2_loadexternal\tpm2_loadexternal.vcxproj", "{A1FFC8F3-94C2-44C5-80A6-B712C41BB840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CF02FCD-7899-4A9D-AE7D-2F74DB1269AC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7CF02FCD-7899-4A9D-AE7D-2F74DB1269AC}.Debug|Win32.Build.0 = Debug|Win32
+		{7CF02FCD-7899-4A9D-AE7D-2F74DB1269AC}.Release|Win32.ActiveCfg = Release|Win32
+		{7CF02FCD-7899-4A9D-AE7D-2F74DB1269AC}.Release|Win32.Build.0 = Release|Win32
+		{061D2E45-ED29-4838-B447-FBC3F47912C1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{061D2E45-ED29-4838-B447-FBC3F47912C1}.Debug|Win32.Build.0 = Debug|Win32
+		{061D2E45-ED29-4838-B447-FBC3F47912C1}.Release|Win32.ActiveCfg = Release|Win32
+		{061D2E45-ED29-4838-B447-FBC3F47912C1}.Release|Win32.Build.0 = Release|Win32
+		{58A2D55C-9BB6-406F-AC48-F55A324DCBD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58A2D55C-9BB6-406F-AC48-F55A324DCBD2}.Debug|Win32.Build.0 = Debug|Win32
+		{58A2D55C-9BB6-406F-AC48-F55A324DCBD2}.Release|Win32.ActiveCfg = Release|Win32
+		{58A2D55C-9BB6-406F-AC48-F55A324DCBD2}.Release|Win32.Build.0 = Release|Win32
+		{A1FFC8F3-94C2-44C5-80A6-B712C41BB840}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A1FFC8F3-94C2-44C5-80A6-B712C41BB840}.Debug|Win32.Build.0 = Debug|Win32
+		{A1FFC8F3-94C2-44C5-80A6-B712C41BB840}.Release|Win32.ActiveCfg = Release|Win32
+		{A1FFC8F3-94C2-44C5-80A6-B712C41BB840}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

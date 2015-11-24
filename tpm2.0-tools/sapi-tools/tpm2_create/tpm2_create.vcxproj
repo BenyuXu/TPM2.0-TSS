@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\common\debug.c" />
+    <ClCompile Include="..\..\..\common\getcommands.c" />
+    <ClCompile Include="..\..\..\common\platformcommand.c" />
+    <ClCompile Include="..\..\..\common\syscontext.c" />
+    <ClCompile Include="..\..\..\getopt4windows\getopt.cpp" />
+    <ClCompile Include="..\..\..\tcti\tpmsockets\tpmsockets.cpp" />
+    <ClCompile Include="..\..\..\test\common\sample\CatSizedByteBuffer.c" />
+    <ClCompile Include="..\..\..\test\common\sample\CopySizedBuffer.c" />
+    <ClCompile Include="..\..\..\test\common\sample\CreateNullSession.c" />
+    <ClCompile Include="..\..\..\test\common\sample\DecryptEncrypt.c" />
+    <ClCompile Include="..\..\..\test\common\sample\Entity.c" />
+    <ClCompile Include="..\..\..\test\common\sample\kdfa.c" />
+    <ClCompile Include="..\..\..\test\common\sample\LoadExternalHMACKey.c" />
+    <ClCompile Include="..\..\..\test\common\sample\SessionHmac.c" />
+    <ClCompile Include="..\..\..\test\common\sample\SetLocality.c" />
+    <ClCompile Include="..\..\..\test\common\sample\StartAuthSession.c" />
+    <ClCompile Include="..\..\..\test\common\sample\TpmCalcPHash.c" />
+    <ClCompile Include="..\..\..\test\common\sample\TpmHandleToName.c" />
+    <ClCompile Include="..\..\..\test\common\sample\TpmHash.c" />
+    <ClCompile Include="..\..\..\test\common\sample\TpmHmac.c" />
+    <ClCompile Include="..\common.cpp" />
+    <ClCompile Include="..\stdafx.cpp" />
+    <ClCompile Include="..\tpm2_create.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\common\debug.h" />
+    <ClInclude Include="..\..\..\common\platform.h" />
+    <ClInclude Include="..\..\..\common\syscontext.h" />
+    <ClInclude Include="..\..\..\tcti\tpmsockets\tpmsockets.h" />
+    <ClInclude Include="..\..\..\test\common\sample\sample.h" />
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\targetver.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{061D2E45-ED29-4838-B447-FBC3F47912C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tpm2_create</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;SAPI_CLIENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>
+      </SDLCheck>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <AdditionalIncludeDirectories>..\..\..\common;..\..\..\test\tpmclient;..\..\..\resourcemgr;..\..\..\test\common\sample;..\..\..\tcti\tpmsockets;..\..\..\sysapi\include;..\..\..\getopt4windows</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\sysapi\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;tpm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
