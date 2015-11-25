@@ -1,0 +1,22 @@
+
+How to build it on Windows?
+First of all, I suppose you used the MS Visual Studio 2012 as you IDE.
+Then please do like below:
+
+1, close the MS Visual Studio;
+
+2, set environment variables
+	a), open a command window,
+	b), subst K: “C:\Program Files (x86)\Microsoft Visual Studio 11.0”,
+	c), run “k:\VC\bin\vcvars.bat “ ,
+	d), in computer -> properties -> advanced systerm setting -> environment varibles, 
+		add a new value: TSSTOOLS_PATH=K:
+
+3,	checkout the branch sapi-tools-win,
+		git checkout sapi-tools-win
+		
+4, open the TPM2.0-TSS source code folder,
+	open tss.sln with MS Visual Studio and build it;
+
+5, open the folder $(dir)\TPM2.0-TSS\tpm2.0-tools,
+	open sapi-tools.sln with MS Visual Studio and build it.
