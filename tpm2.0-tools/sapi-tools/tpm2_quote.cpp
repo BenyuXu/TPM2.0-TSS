@@ -56,7 +56,10 @@
 #include <limits.h>
 #include <ctype.h>
 #include <getopt.h>
+
+#ifndef _WIN32
 #include <arpa/inet.h>
+#endif
 
 #include "tpm20.h"
 #include "tpmsockets.h"
